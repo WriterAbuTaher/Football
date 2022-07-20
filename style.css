@@ -21,7 +21,7 @@ main {
     display: flex;
     align-items: center;
     color: white;
-    margin: 5rem 0;
+    margin: 2rem 0 5rem;
     border-radius: 1rem;
 }
 
@@ -80,6 +80,10 @@ main {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    width: 320px;
+    box-shadow: 0rem .5rem 1rem rgba(0, 0, 0, .25);
+    padding: 1rem;
+    border-radius: 1rem;
 }
 
 /* blogs */
@@ -139,7 +143,7 @@ main {
 
 footer {
     width: 100%;
-    padding: 5rem;
+    padding: 4rem;
     background-color: #020F2A;
     color: white;
 }
@@ -151,14 +155,14 @@ footer h1 {
 
 footer hr {
     opacity: 50%;
-    width: 80%;
+    width: 90%;
     margin: 2rem auto;
 }
 
 .footer-links {
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 1rem;
     list-style: none;
 }
 
@@ -170,7 +174,7 @@ footer hr {
 .social-icon {
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: 1.5rem;
     margin-top: 3rem;
     font-size: 1.5rem;
     cursor: pointer;
@@ -182,6 +186,15 @@ footer hr {
 
 /* tablet screen */
 @media screen and (max-width: 834px) and (min-width: 480px) {
+
+    .content {
+        margin: 1rem;
+    }
+
+    .menu {
+        width: 100%;
+        justify-content: center;
+    }
 
     .blog-section {
         flex-direction: column;
@@ -227,6 +240,10 @@ footer hr {
         display: grid;
     }
 
+    .menu {
+        width: 100%;
+    }
+
     .blogs {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -237,5 +254,6 @@ footer hr {
 
     .footer-links {
         flex-direction: column;
+        align-items: center;
     }
 }
